@@ -1,0 +1,16 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/lwm/drone/tWs/devel/lib/python2.7/dist-packages",
+        "/home/lwm/catkin_ws/devel/lib/python2.7/dist-packages",
+        "/home/lwm/ws/devel/lib/python2.7/dist-packages",
+        "/home/lwm/ws_turtlebot3/devel/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/lwm/drone/tWs/devel/lib/python2.7/dist-packages",
+        "/home/lwm/catkin_ws/devel/lib/python2.7/dist-packages",
+        "/home/lwm/ws/devel/lib/python2.7/dist-packages",
+        "/home/lwm/ws_turtlebot3/devel/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ]
+}

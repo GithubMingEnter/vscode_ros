@@ -1,0 +1,42 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "build",
+			"command": "source /opt/ros/melodic/setup.bash && catkin_make -DCMAKE_BUILD_TYPE=Debug",
+			"args": [],
+			// "options": {
+			// 	"cwd": "${fileDirname}"
+			// },
+			"problemMatcher": [
+				"$catkin-gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "编译器: /usr/bin/g++"
+		},
+		{
+            "type": "shell",
+            "label": "clean",
+            "command": "source /opt/ros/melodic/setup.bash && catkin_make  clean",
+            "args": [],
+            "problemMatcher": [
+                "$catkin-gcc"
+            ]
+           
+        },
+		{
+            "type": "shell",
+            "label": "release",
+            "command": "source /opt/ros/melodic/setup.bash && catkin_make -DCMAKE_BUILD_TYPE=Release",
+            "args": [],
+            "problemMatcher": [
+                "$catkin-gcc"
+            ]
+           
+		}
+	]
+}

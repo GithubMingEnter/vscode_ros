@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/lwm/vscode_ros/devel/setup.sh
