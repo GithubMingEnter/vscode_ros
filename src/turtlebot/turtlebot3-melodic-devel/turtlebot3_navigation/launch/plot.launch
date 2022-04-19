@@ -1,0 +1,11 @@
+<launch>
+        <!-- **************** Plot ocp results ************** -->
+        <arg name="plot" default="true" />
+        <arg name="plot_states" default="true" />
+        <node name="ocp_result_plotter" pkg="mpc_local_planner" type="plot_optimal_control_results.py" output="screen" if="$(arg plot)">
+              <param name="ocp_result_topic" value="/move_base/MpcLocalPlannerROS/ocp_result"/>
+              <param name="plot_rate" value="5"/>
+              <param name="plot_states" value="$(arg plot_states)"/>
+        </node>
+
+</launch>

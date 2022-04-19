@@ -1,0 +1,8 @@
+prefix=/home/lwm/vscode_ros/devel
+
+Name: turtlebot3_msgs
+Description: Description of turtlebot3_msgs
+Version: 1.0.1
+Cflags: -I/home/lwm/vscode_ros/devel/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs message_runtime

@@ -1,0 +1,17 @@
+<launch>
+    <arg name  ="robotTf" value="map" />
+    <!-- doc="map odom odom_combined" -->
+    <arg name ="base" value="base_link"/>
+    <arg name="cmd_vel" value="cmd_vel"/>
+    <arg name="odom" value="odom"/>
+    
+    <node name="mpcTracking" pkg="create" type="mpcTracking.py" output="screen" >
+
+        <param name ="baseL" type ="string"  value="$(arg base)"/>
+        <param name ="base_frame" type="string" value="$(arg robotTf)"/>
+        <param name="cmd_vel" type = "string" value ="$(arg cmd_vel)"/>
+        <param name="odom" type = "string" value ="$(arg odom)"/>
+
+    </node>
+
+</launch>

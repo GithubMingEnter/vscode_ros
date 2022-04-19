@@ -1,0 +1,10 @@
+<launch>
+  
+<include file="$(find realsense2_camera)/launch/rs_t265.launch">
+
+</include>
+ <!-- <node name='send_mark' pkg="turn_on_wheeltec_robot" type="send_mark.py">
+ </node> -->
+ <node name='ControlInt' pkg ="create" type="ControlInt.py">
+ </node>
+</launch>
